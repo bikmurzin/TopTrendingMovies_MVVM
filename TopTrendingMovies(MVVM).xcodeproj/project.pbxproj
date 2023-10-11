@@ -24,6 +24,9 @@
 		70F9B8222AD5E12F00BE24F4 /* MovieTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F9B8212AD5E12F00BE24F4 /* MovieTableCellViewModel.swift */; };
 		70F9B8252AD5E3D300BE24F4 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 70F9B8242AD5E3D300BE24F4 /* SDWebImage */; };
 		70F9B8272AD5E3D300BE24F4 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 70F9B8262AD5E3D300BE24F4 /* SDWebImageMapKit */; };
+		70F9B82F2AD6CF0400BE24F4 /* DetailsMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F9B82D2AD6CF0400BE24F4 /* DetailsMovieViewController.swift */; };
+		70F9B8302AD6CF0400BE24F4 /* DetailsMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70F9B82E2AD6CF0400BE24F4 /* DetailsMovieViewController.xib */; };
+		70F9B8322AD6D13E00BE24F4 /* DetailsMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F9B8312AD6D13E00BE24F4 /* DetailsMovieViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		70F9B81C2AD5D6DD00BE24F4 /* MainMovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMovieCell.xib; sourceTree = "<group>"; };
 		70F9B81F2AD5DBCF00BE24F4 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		70F9B8212AD5E12F00BE24F4 /* MovieTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableCellViewModel.swift; sourceTree = "<group>"; };
+		70F9B82D2AD6CF0400BE24F4 /* DetailsMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMovieViewController.swift; sourceTree = "<group>"; };
+		70F9B82E2AD6CF0400BE24F4 /* DetailsMovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsMovieViewController.xib; sourceTree = "<group>"; };
+		70F9B8312AD6D13E00BE24F4 /* DetailsMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMovieViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,7 @@
 			children = (
 				70B346942AD416940022BBFA /* MainViewModel.swift */,
 				70F9B8212AD5E12F00BE24F4 /* MovieTableCellViewModel.swift */,
+				70F9B8312AD6D13E00BE24F4 /* DetailsMovieViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -123,6 +130,7 @@
 		70B3468C2AD3F21B0022BBFA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				70F9B8282AD6CEB400BE24F4 /* DetailsMovieViewController */,
 				70B346832AD3E9CE0022BBFA /* MainViewController */,
 			);
 			path = Controllers;
@@ -176,6 +184,15 @@
 				70F9B81C2AD5D6DD00BE24F4 /* MainMovieCell.xib */,
 			);
 			path = MainMovieCell;
+			sourceTree = "<group>";
+		};
+		70F9B8282AD6CEB400BE24F4 /* DetailsMovieViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70F9B82D2AD6CF0400BE24F4 /* DetailsMovieViewController.swift */,
+				70F9B82E2AD6CF0400BE24F4 /* DetailsMovieViewController.xib */,
+			);
+			path = DetailsMovieViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +263,7 @@
 				70B3467C2AD3E7D90022BBFA /* LaunchScreen.storyboard in Resources */,
 				70B346892AD3EA750022BBFA /* MainViewController.xib in Resources */,
 				70B346792AD3E7D90022BBFA /* Assets.xcassets in Resources */,
+				70F9B8302AD6CF0400BE24F4 /* DetailsMovieViewController.xib in Resources */,
 				70F9B81E2AD5D6DD00BE24F4 /* MainMovieCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,11 +279,13 @@
 				70F9B81D2AD5D6DD00BE24F4 /* MainMovieCell.swift in Sources */,
 				70B346702AD3E7D60022BBFA /* AppDelegate.swift in Sources */,
 				70B3469B2AD42CF30022BBFA /* APICaller.swift in Sources */,
+				70F9B82F2AD6CF0400BE24F4 /* DetailsMovieViewController.swift in Sources */,
 				70B346932AD3FE6C0022BBFA /* MainViewController+TableView.swift in Sources */,
 				70B346882AD3EA750022BBFA /* MainViewController.swift in Sources */,
 				70F9B8202AD5DBCF00BE24F4 /* UIViewExtensions.swift in Sources */,
 				70F9B8222AD5E12F00BE24F4 /* MovieTableCellViewModel.swift in Sources */,
 				70B346972AD4278C0022BBFA /* NetworkConstant.swift in Sources */,
+				70F9B8322AD6D13E00BE24F4 /* DetailsMovieViewModel.swift in Sources */,
 				70B346952AD416940022BBFA /* MainViewModel.swift in Sources */,
 				70B3469D2AD42D570022BBFA /* TrendingMoviesModel.swift in Sources */,
 			);

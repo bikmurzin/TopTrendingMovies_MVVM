@@ -48,12 +48,17 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         let cellViewModel = self.cellDataSource[indexPath.row]
         cell.setupCell(viewModel: cellViewModel)
         
-//        Убрать изменения в ячейке при ее выборе
+//        Убрать изменение отображения ячейки при ее выборе
         cell.selectionStyle = .none
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        150
+        180
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let movieId = cellDataSource[indexPath.row].id
+        self.openDetails(movieId: movieId)
     }
 }
