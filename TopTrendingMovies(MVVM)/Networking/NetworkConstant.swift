@@ -37,7 +37,8 @@ class NetworkConstant {
     //https://image.tmdb.org/t/p/w500
     public var imageServerAddress: String {
         get {
-            return "https://api.themoviedb.org/3/collection/collection_id/images"
+//            return "https://api.themoviedb.org/3/collection/collection_id/images"
+            return "https://image.tmdb.org/t/p/w500"
         }
     }
 }
